@@ -1,0 +1,167 @@
+/*imported filse*/
+
+.modal-back{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  transition: visibility 0.3s opacity 1s;
+  
+  }
+  
+  .bactived{
+    visibility: visible;
+    opacity: 1;
+    transition: transform 300ms ease-in-out , opacity 300ms ease-in-out;
+  }
+  
+  .modall {
+    text-align: center;
+    background-color: #fff;
+    width: 500px;
+    height: 200px;
+    max-width: 98%;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1rem;
+    color: dimgray;
+    font-weight: normal;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  .modall h3 + h2 {
+    font-weight: 300;
+  }
+  
+  .modall .yes button {
+    width: 100px;
+    margin: 2rem 1rem;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .modall button:first-child {
+    background: #9c1111;
+  }
+  
+  .modall button:nth-child(2) {
+    background: #0f3fa5;
+  }
+  
+  .modall button:nth-child(2):hover {
+    background: #3838cf;
+  }
+  
+  .modal1-bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  transition: visibility 0.3s opacity 1s;
+  
+}
+
+/* Modal Content */
+.modal-1 {
+  text-align: center;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    height: 200px;
+    padding: 0;
+    border: 1px solid #888;
+    width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+    
+}
+.bactived-1{
+  visibility: visible;
+  opacity: 1;
+  transition: transform 300ms ease-in-out , opacity 300ms ease-in-out;
+}
+
+.modal-1 h3{
+   padding: 1rem;
+   font-weight: 500;
+   font-size: 1rem;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+      top:-300px; opacity:0
+    }
+    to {
+      top:0; opacity:1
+    }
+}
+
+@keyframes animatetop {
+    from {
+      top:-300px; opacity:0
+    }
+    to {
+      top:0; opacity:1
+    }
+}
+
+
+.close {
+    color: white;
+    float: right;
+    font-size: 1REM;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-1 .heading {
+    padding: 1rem;
+    background-color: #135aaa;
+    color: white;
+}
+
+.modal-1 form label{
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+.modal-1 button{
+  color: rgb(73, 73, 73);
+  width: 100px;
+  height: 40px;
+  margin: 1rem;
+  border: 1px solid rgb(37, 106, 209);
+  outline: none;
+}

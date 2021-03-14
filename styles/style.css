@@ -1,0 +1,713 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  /*Pra ito sa whitespace minsan may space padin sa gilid kaya need mo nito*/
+  /*Ang media queries ay di required gamitin lagi pag kailangan lang talaga kumbaga forbidden technique 
+lagi lang tandaan gawin fluid ang mga elements asap*/
+  /* Dito na ung pina ka main content */
+  /*  Modal pop dito na sya macconstruct in design this is tricks para mapadali*/
+  /*radio buttons*/
+}
+
+* * {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          font-family: 'montserrat' ,sans-serif;
+}
+
+* body, * html {
+  padding: 0px;
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+ 
+}
+.swal-title{
+  font-family: 'poppins';
+}
+
+* .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #25335C;
+  color: #ffffff;
+}
+
+* .logo a {
+  font-family: 'Poppins';
+  font-size: 1.4rem;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+* .logo {
+  padding: .5rem 2.5rem;
+  margin: .5rem;
+}
+
+* .navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+* .navbar-links ul li {
+  list-style: none;
+}
+
+* .navbar-links ul a {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: 'Poppins';
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0rem 2rem;
+  display: block;
+}
+
+* .navbar-links :hover {
+  color: #918d8d;
+}
+
+* .toggle-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+* .toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  * .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  * .toggle-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  * .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  * .navbar-links ul {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  * .navbar-links ul li {
+    text-align: center;
+  }
+  * .navbar-links ul li a {
+    padding: .5rem 1rem;
+  }
+  * .navbar-links.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  * .navbar-links li a:hover {
+    font-size: 1.5rem;
+    -webkit-transition: .3s ease-in;
+    transition: .3s ease-in;
+  }
+}
+
+* .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  height: 92.6vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #25335C;
+  margin: auto;
+  background: linear-gradient(169deg, #25335c 78%, white 78%);
+}
+
+* .container .inner .img1 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 70px;
+  position: absolute;
+  top: 40px;
+  right: 190px;
+}
+
+* .container .inner .img2 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 70px;
+  position: absolute;
+  top: 240px;
+  right: 90px;
+}
+
+* .container .inner .img3 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 40px;
+  position: absolute;
+  top: 100px;
+  right: 390px;
+}
+
+* .container .inner .img4 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 70px;
+  position: absolute;
+  left: 10px;
+  bottom: 100px;
+}
+
+* .container .content {
+  padding: 2rem;
+}
+
+* .container .content .text {
+  color: #ffffff;
+  font-family: 'Poppins';
+}
+
+* .container .content .text h2 {
+  background: -webkit-gradient(linear, left top, right top, from(#f1ecec), to(#b4b3b3));
+  background: linear-gradient(to right, #f1ecec, #b4b3b3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+* .container .content .text p {
+  margin: auto;
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+* .container .content .text i {
+  margin-right: 1rem;
+}
+
+* .cover {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60vh;
+}
+
+* .container .cover img {
+  position: absolute;
+  top: 290px;
+  right: -200px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 850px;
+  z-index: 999;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 2rem;
+}
+
+* .cta {
+  padding: 50px 0px 0px 0px;
+}
+
+* .Signin {
+  border-radius: 4px;
+  background-color: #F24A47;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.2rem;
+  height: 50px;
+  width: 180px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px 50PX;
+  outline: none;
+}
+
+* .Signin span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+* .Signin span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+* .Signin:hover span {
+  padding-right: 25px;
+}
+
+* .Signin:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+* .wrapper {
+  width: 330px;
+  padding: 20px;
+}
+
+* .wrapper .input-data {
+  height: 40px;
+  width: 100%;
+  position: relative;
+}
+
+* .wrapper .input-data input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid white;
+  outline: none;
+}
+
+* .wrapper .username {
+  margin-bottom: 2rem;
+}
+
+* .input-data input:focus ~ label,
+* .input-data input:valid ~ label {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  font-size: 15px;
+  color: #4158d0;
+}
+
+* .wrapper .input-data label {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: grey;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+* .input-data .underline {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+}
+
+* .input-data .underline:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #4158d0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+* .input-data input:focus ~ .underline:before,
+* .input-data input:valid ~ .underline:before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+* .wrapper .submit button {
+  width: 100%;
+  height: 40px;
+  border-radius: 50em;
+  outline: 0;
+  border: none;
+  color: white;
+  background: #25335C;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+* .wrapper .submit button:hover {
+  background: linear-gradient(260deg, #3060ed 27%, #5890e7 94%);
+}
+
+* .forgot {
+  color: gray;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+* .cta .Signup {
+  border: 2px solid #ffffff;
+  background: transparent;
+  width: 150px;
+  height: 0px;
+  cursor: pointer;
+  color: white;
+  font-size: 1REM;
+  border-radius: 6px;
+  outline: none;
+}
+
+* .cta .Signup:hover {
+  border: 2px solid #666464;
+  color: #666464;
+}
+
+@media screen and (max-width: 1000px) {
+  * .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  * .content {
+    margin: auto;
+    text-align: center;
+    position: relative;
+  }
+  * .content .text h2 {
+    font-size: 30px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  * .content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  * .content .text p {
+    text-align: left;
+    font-size: 16px;
+    margin: auto;
+  }
+  * .container .cover img {
+    display: none;
+  }
+  * .inner img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  * .content .text h2 {
+    font-size: 20px;
+    margin: auto;
+  }
+  * .content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  * .content .text p {
+    text-align: left;
+    font-size: 11px;
+    margin: 0 auto;
+  }
+  * .cta .Signin {
+    width: 100px;
+    height: 50px;
+  }
+  * .cta .Signup {
+    width: 100px;
+    height: 50px;
+  }
+  * .container::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #25335C #fff;
+    -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
+            clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  }
+}
+
+@media screen and (max-width: 375px) {
+  * .cta .Signin {
+    width: 150px;
+    height: 50px;
+    font-size: 1rem;
+  }
+  * .content .text p {
+    text-align: left;
+    font-size: 12px;
+    margin: 0 auto;
+  }
+  * .cta .Signup {
+    font-size: .8rem;
+    width: 70px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  * .container .cover img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 700px;
+    z-index: 9999;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-width: 100%;
+    margin-right: 2rem;
+  }
+}
+
+* .Modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s opacity 1s;
+  transition: visibility 0s opacity 1s;
+}
+
+* .bg-active {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-in-out , -webkit-transform 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out , -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out , opacity 300ms ease-in-out;
+  transition: transform 300ms ease-in-out , opacity 300ms ease-in-out , -webkit-transform 300ms ease-in-out;
+}
+
+* .modal {
+  max-width: 100%;
+  background-color: #ffffff;
+  position: relative;
+  border-radius: 5px;
+  height: 600px;
+  width: 400px;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Poppins';
+  -webkit-box-shadow: 0px 0px 5px #0000;
+          box-shadow: 0px 0px 5px #0000;
+}
+
+* .modal .eye i {
+  position: absolute;
+  bottom: 13px;
+  right: 10px;
+  color: #494747;
+  cursor: pointer;
+}
+
+* .modal .content button {
+  position: absolute;
+  top: -100px;
+  left: 310px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+* .modal .input {
+  border: none;
+  border-bottom: 2px solid #777575;
+  margin: 5px 0px;
+  width: 100%;
+  padding: 0 5px;
+  height: 30px;
+  font-size: 1rem;
+  font-family: 'poppins';
+  background: none;
+  outline: none;
+}
+
+* .modal .input:focus {
+  border-bottom: 2px solid #2691d9;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+* .modal .username {
+  border-bottom: 1px solid grey;
+}
+
+* .modal .password {
+  border-bottom: 1px solid grey;
+}
+
+* .modal label {
+  font-size: 1rem;
+  color: #615f5f;
+  font-family: 'poppins';
+  font-weight: 500;
+}
+
+* .modal .showpass {
+  padding-bottom: 2rem;
+}
+
+* .modal .signup-link {
+  padding: .5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 1rem;
+}
+
+* .modal #text {
+  display: none;
+  color: red;
+  position: absolute;
+  top: 430px;
+  right: 460px;
+}
+
+* .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+* .header h2 {
+  font-size: 1.6rem;
+  position: relative;
+  top: -130px;
+  font-family: 'POPPINS';
+  font-weight: normal;
+  color: #25335C;
+  text-transform: uppercase;
+}
+
+* .radio {
+  -ms-flex-item-align: center;
+      align-self: center;
+  position: absolute;
+  top: -50px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+* .radio .radio__input {
+  display: none;
+}
+
+* .radio .radio__input:checked + .radio__label {
+  border-bottom: 4px solid #0a47a3;
+}
+
+* .radio .radio__label {
+  padding: 8px 14px;
+  font-size: 1REM;
+  font-family: sans-serif;
+  color: #5e5959;
+  cursor: pointer;
+  -webkit-transition: border-bottom 0.3s;
+  transition: border-bottom 0.3s;
+}
+/*# sourceMappingURL=style.css.map */
