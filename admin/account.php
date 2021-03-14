@@ -27,21 +27,30 @@
     <link rel="stylesheet" href="../styles/admin.css">
     <link rel="stylesheet" href="../fontawesome/css/all.css">
     <link rel="stylesheet" href="../boxicons/css/boxicons.css">
-    <link rel="stylesheet" href="../styles/dean.css">
+    
     <link rel="shortcut icon" type="image/png " href="../img/fmsURST.png">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
    
     <title>FMS | ADMIN</title>
 </head>
-<Style>
-.sidebar-menu a.active {
-  background: #fff;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  color: #0e153a;
-  border-radius: 30px 0px 0px 30px;
+<style>
+.user-naming {
+  display: block;
+  text-align: center;
+  padding: 2rem;
+  color: #fff;
 }
- </style>
+
+.user-naming h5 {
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+
+.user-naming i {
+  font-size: 4rem;
+  color: #fff;
+}
+    </style>
 
 <body>
     <input type="checkbox" id="nav-toggle">
